@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		4C6D23422ABB2099006C477F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6D23412ABB2099006C477F /* AppDelegate.swift */; };
 		4C6D23442ABB2099006C477F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6D23432ABB2099006C477F /* SceneDelegate.swift */; };
-		4C6D23462ABB2099006C477F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6D23452ABB2099006C477F /* ViewController.swift */; };
-		4C6D23492ABB2099006C477F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C6D23472ABB2099006C477F /* Main.storyboard */; };
+		4C6D23462ABB2099006C477F /* TodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6D23452ABB2099006C477F /* TodoViewController.swift */; };
 		4C6D234B2ABB209A006C477F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C6D234A2ABB209A006C477F /* Assets.xcassets */; };
 		4C6D234E2ABB209A006C477F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C6D234C2ABB209A006C477F /* LaunchScreen.storyboard */; };
 		4C6D23592ABB209A006C477F /* usket_ReactorKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6D23582ABB209A006C477F /* usket_ReactorKitTests.swift */; };
@@ -40,8 +39,7 @@
 		4C6D233E2ABB2099006C477F /* usket.ReactorKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = usket.ReactorKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C6D23412ABB2099006C477F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C6D23432ABB2099006C477F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4C6D23452ABB2099006C477F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4C6D23482ABB2099006C477F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4C6D23452ABB2099006C477F /* TodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewController.swift; sourceTree = "<group>"; };
 		4C6D234A2ABB209A006C477F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C6D234D2ABB209A006C477F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C6D234F2ABB209A006C477F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -101,13 +99,8 @@
 		4C6D23402ABB2099006C477F /* usket.ReactorKit */ = {
 			isa = PBXGroup;
 			children = (
-				4C6D23412ABB2099006C477F /* AppDelegate.swift */,
-				4C6D23432ABB2099006C477F /* SceneDelegate.swift */,
-				4C6D23452ABB2099006C477F /* ViewController.swift */,
-				4C6D23472ABB2099006C477F /* Main.storyboard */,
-				4C6D234A2ABB209A006C477F /* Assets.xcassets */,
-				4C6D234C2ABB209A006C477F /* LaunchScreen.storyboard */,
-				4C6D234F2ABB209A006C477F /* Info.plist */,
+				4C6D23752ABB23D1006C477F /* Application */,
+				4C6D23742ABB23C5006C477F /* ReactorKit */,
 			);
 			path = usket.ReactorKit;
 			sourceTree = "<group>";
@@ -127,6 +120,26 @@
 				4C6D23642ABB209A006C477F /* usket_ReactorKitUITestsLaunchTests.swift */,
 			);
 			path = usket.ReactorKitUITests;
+			sourceTree = "<group>";
+		};
+		4C6D23742ABB23C5006C477F /* ReactorKit */ = {
+			isa = PBXGroup;
+			children = (
+				4C6D23452ABB2099006C477F /* TodoViewController.swift */,
+			);
+			path = ReactorKit;
+			sourceTree = "<group>";
+		};
+		4C6D23752ABB23D1006C477F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				4C6D23412ABB2099006C477F /* AppDelegate.swift */,
+				4C6D23432ABB2099006C477F /* SceneDelegate.swift */,
+				4C6D234A2ABB209A006C477F /* Assets.xcassets */,
+				4C6D234C2ABB209A006C477F /* LaunchScreen.storyboard */,
+				4C6D234F2ABB209A006C477F /* Info.plist */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,7 +254,6 @@
 			files = (
 				4C6D234E2ABB209A006C477F /* LaunchScreen.storyboard in Resources */,
 				4C6D234B2ABB209A006C477F /* Assets.xcassets in Resources */,
-				4C6D23492ABB2099006C477F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C6D23462ABB2099006C477F /* ViewController.swift in Sources */,
+				4C6D23462ABB2099006C477F /* TodoViewController.swift in Sources */,
 				4C6D23422ABB2099006C477F /* AppDelegate.swift in Sources */,
 				4C6D23442ABB2099006C477F /* SceneDelegate.swift in Sources */,
 			);
@@ -305,14 +317,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4C6D23472ABB2099006C477F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4C6D23482ABB2099006C477F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4C6D234C2ABB209A006C477F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -449,10 +453,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = usket.ReactorKit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -460,9 +463,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "usket.usket-ReactorKit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -477,10 +483,9 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = usket.ReactorKit/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -488,9 +493,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "usket.usket-ReactorKit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
