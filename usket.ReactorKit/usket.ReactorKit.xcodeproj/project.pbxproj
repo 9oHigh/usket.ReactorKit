@@ -1,0 +1,634 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C6D23422ABB2099006C477F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6D23412ABB2099006C477F /* AppDelegate.swift */; };
+		4C6D23442ABB2099006C477F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6D23432ABB2099006C477F /* SceneDelegate.swift */; };
+		4C6D23462ABB2099006C477F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6D23452ABB2099006C477F /* ViewController.swift */; };
+		4C6D23492ABB2099006C477F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C6D23472ABB2099006C477F /* Main.storyboard */; };
+		4C6D234B2ABB209A006C477F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C6D234A2ABB209A006C477F /* Assets.xcassets */; };
+		4C6D234E2ABB209A006C477F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C6D234C2ABB209A006C477F /* LaunchScreen.storyboard */; };
+		4C6D23592ABB209A006C477F /* usket_ReactorKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6D23582ABB209A006C477F /* usket_ReactorKitTests.swift */; };
+		4C6D23632ABB209A006C477F /* usket_ReactorKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6D23622ABB209A006C477F /* usket_ReactorKitUITests.swift */; };
+		4C6D23652ABB209A006C477F /* usket_ReactorKitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6D23642ABB209A006C477F /* usket_ReactorKitUITestsLaunchTests.swift */; };
+		4C6D23732ABB20C2006C477F /* ReactorKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4C6D23722ABB20C2006C477F /* ReactorKit */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4C6D23552ABB209A006C477F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C6D23362ABB2099006C477F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C6D233D2ABB2099006C477F;
+			remoteInfo = usket.ReactorKit;
+		};
+		4C6D235F2ABB209A006C477F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C6D23362ABB2099006C477F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C6D233D2ABB2099006C477F;
+			remoteInfo = usket.ReactorKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4C6D233E2ABB2099006C477F /* usket.ReactorKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = usket.ReactorKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C6D23412ABB2099006C477F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4C6D23432ABB2099006C477F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4C6D23452ABB2099006C477F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4C6D23482ABB2099006C477F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4C6D234A2ABB209A006C477F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C6D234D2ABB209A006C477F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4C6D234F2ABB209A006C477F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C6D23542ABB209A006C477F /* usket.ReactorKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = usket.ReactorKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C6D23582ABB209A006C477F /* usket_ReactorKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usket_ReactorKitTests.swift; sourceTree = "<group>"; };
+		4C6D235E2ABB209A006C477F /* usket.ReactorKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = usket.ReactorKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C6D23622ABB209A006C477F /* usket_ReactorKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usket_ReactorKitUITests.swift; sourceTree = "<group>"; };
+		4C6D23642ABB209A006C477F /* usket_ReactorKitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usket_ReactorKitUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C6D233B2ABB2099006C477F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C6D23732ABB20C2006C477F /* ReactorKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C6D23512ABB209A006C477F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C6D235B2ABB209A006C477F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C6D23352ABB2099006C477F = {
+			isa = PBXGroup;
+			children = (
+				4C6D23402ABB2099006C477F /* usket.ReactorKit */,
+				4C6D23572ABB209A006C477F /* usket.ReactorKitTests */,
+				4C6D23612ABB209A006C477F /* usket.ReactorKitUITests */,
+				4C6D233F2ABB2099006C477F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4C6D233F2ABB2099006C477F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C6D233E2ABB2099006C477F /* usket.ReactorKit.app */,
+				4C6D23542ABB209A006C477F /* usket.ReactorKitTests.xctest */,
+				4C6D235E2ABB209A006C477F /* usket.ReactorKitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C6D23402ABB2099006C477F /* usket.ReactorKit */ = {
+			isa = PBXGroup;
+			children = (
+				4C6D23412ABB2099006C477F /* AppDelegate.swift */,
+				4C6D23432ABB2099006C477F /* SceneDelegate.swift */,
+				4C6D23452ABB2099006C477F /* ViewController.swift */,
+				4C6D23472ABB2099006C477F /* Main.storyboard */,
+				4C6D234A2ABB209A006C477F /* Assets.xcassets */,
+				4C6D234C2ABB209A006C477F /* LaunchScreen.storyboard */,
+				4C6D234F2ABB209A006C477F /* Info.plist */,
+			);
+			path = usket.ReactorKit;
+			sourceTree = "<group>";
+		};
+		4C6D23572ABB209A006C477F /* usket.ReactorKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				4C6D23582ABB209A006C477F /* usket_ReactorKitTests.swift */,
+			);
+			path = usket.ReactorKitTests;
+			sourceTree = "<group>";
+		};
+		4C6D23612ABB209A006C477F /* usket.ReactorKitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4C6D23622ABB209A006C477F /* usket_ReactorKitUITests.swift */,
+				4C6D23642ABB209A006C477F /* usket_ReactorKitUITestsLaunchTests.swift */,
+			);
+			path = usket.ReactorKitUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C6D233D2ABB2099006C477F /* usket.ReactorKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C6D23682ABB209A006C477F /* Build configuration list for PBXNativeTarget "usket.ReactorKit" */;
+			buildPhases = (
+				4C6D233A2ABB2099006C477F /* Sources */,
+				4C6D233B2ABB2099006C477F /* Frameworks */,
+				4C6D233C2ABB2099006C477F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = usket.ReactorKit;
+			packageProductDependencies = (
+				4C6D23722ABB20C2006C477F /* ReactorKit */,
+			);
+			productName = usket.ReactorKit;
+			productReference = 4C6D233E2ABB2099006C477F /* usket.ReactorKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4C6D23532ABB209A006C477F /* usket.ReactorKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C6D236B2ABB209A006C477F /* Build configuration list for PBXNativeTarget "usket.ReactorKitTests" */;
+			buildPhases = (
+				4C6D23502ABB209A006C477F /* Sources */,
+				4C6D23512ABB209A006C477F /* Frameworks */,
+				4C6D23522ABB209A006C477F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C6D23562ABB209A006C477F /* PBXTargetDependency */,
+			);
+			name = usket.ReactorKitTests;
+			productName = usket.ReactorKitTests;
+			productReference = 4C6D23542ABB209A006C477F /* usket.ReactorKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4C6D235D2ABB209A006C477F /* usket.ReactorKitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C6D236E2ABB209A006C477F /* Build configuration list for PBXNativeTarget "usket.ReactorKitUITests" */;
+			buildPhases = (
+				4C6D235A2ABB209A006C477F /* Sources */,
+				4C6D235B2ABB209A006C477F /* Frameworks */,
+				4C6D235C2ABB209A006C477F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C6D23602ABB209A006C477F /* PBXTargetDependency */,
+			);
+			name = usket.ReactorKitUITests;
+			productName = usket.ReactorKitUITests;
+			productReference = 4C6D235E2ABB209A006C477F /* usket.ReactorKitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C6D23362ABB2099006C477F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					4C6D233D2ABB2099006C477F = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					4C6D23532ABB209A006C477F = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 4C6D233D2ABB2099006C477F;
+					};
+					4C6D235D2ABB209A006C477F = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 4C6D233D2ABB2099006C477F;
+					};
+				};
+			};
+			buildConfigurationList = 4C6D23392ABB2099006C477F /* Build configuration list for PBXProject "usket.ReactorKit" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4C6D23352ABB2099006C477F;
+			packageReferences = (
+				4C6D23712ABB20C2006C477F /* XCRemoteSwiftPackageReference "ReactorKit" */,
+			);
+			productRefGroup = 4C6D233F2ABB2099006C477F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C6D233D2ABB2099006C477F /* usket.ReactorKit */,
+				4C6D23532ABB209A006C477F /* usket.ReactorKitTests */,
+				4C6D235D2ABB209A006C477F /* usket.ReactorKitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C6D233C2ABB2099006C477F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C6D234E2ABB209A006C477F /* LaunchScreen.storyboard in Resources */,
+				4C6D234B2ABB209A006C477F /* Assets.xcassets in Resources */,
+				4C6D23492ABB2099006C477F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C6D23522ABB209A006C477F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C6D235C2ABB209A006C477F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C6D233A2ABB2099006C477F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C6D23462ABB2099006C477F /* ViewController.swift in Sources */,
+				4C6D23422ABB2099006C477F /* AppDelegate.swift in Sources */,
+				4C6D23442ABB2099006C477F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C6D23502ABB209A006C477F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C6D23592ABB209A006C477F /* usket_ReactorKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C6D235A2ABB209A006C477F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C6D23632ABB209A006C477F /* usket_ReactorKitUITests.swift in Sources */,
+				4C6D23652ABB209A006C477F /* usket_ReactorKitUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4C6D23562ABB209A006C477F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C6D233D2ABB2099006C477F /* usket.ReactorKit */;
+			targetProxy = 4C6D23552ABB209A006C477F /* PBXContainerItemProxy */;
+		};
+		4C6D23602ABB209A006C477F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C6D233D2ABB2099006C477F /* usket.ReactorKit */;
+			targetProxy = 4C6D235F2ABB209A006C477F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4C6D23472ABB2099006C477F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C6D23482ABB2099006C477F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4C6D234C2ABB209A006C477F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C6D234D2ABB209A006C477F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C6D23662ABB209A006C477F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4C6D23672ABB209A006C477F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C6D23692ABB209A006C477F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 46QF7GBZH7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = usket.ReactorKit/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "usket.usket-ReactorKit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4C6D236A2ABB209A006C477F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 46QF7GBZH7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = usket.ReactorKit/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "usket.usket-ReactorKit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4C6D236C2ABB209A006C477F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 46QF7GBZH7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "usket.usket-ReactorKitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/usket.ReactorKit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/usket.ReactorKit";
+			};
+			name = Debug;
+		};
+		4C6D236D2ABB209A006C477F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 46QF7GBZH7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "usket.usket-ReactorKitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/usket.ReactorKit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/usket.ReactorKit";
+			};
+			name = Release;
+		};
+		4C6D236F2ABB209A006C477F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 46QF7GBZH7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "usket.usket-ReactorKitUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = usket.ReactorKit;
+			};
+			name = Debug;
+		};
+		4C6D23702ABB209A006C477F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 46QF7GBZH7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "usket.usket-ReactorKitUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = usket.ReactorKit;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C6D23392ABB2099006C477F /* Build configuration list for PBXProject "usket.ReactorKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C6D23662ABB209A006C477F /* Debug */,
+				4C6D23672ABB209A006C477F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C6D23682ABB209A006C477F /* Build configuration list for PBXNativeTarget "usket.ReactorKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C6D23692ABB209A006C477F /* Debug */,
+				4C6D236A2ABB209A006C477F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C6D236B2ABB209A006C477F /* Build configuration list for PBXNativeTarget "usket.ReactorKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C6D236C2ABB209A006C477F /* Debug */,
+				4C6D236D2ABB209A006C477F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C6D236E2ABB209A006C477F /* Build configuration list for PBXNativeTarget "usket.ReactorKitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C6D236F2ABB209A006C477F /* Debug */,
+				4C6D23702ABB209A006C477F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4C6D23712ABB20C2006C477F /* XCRemoteSwiftPackageReference "ReactorKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactorKit/ReactorKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4C6D23722ABB20C2006C477F /* ReactorKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4C6D23712ABB20C2006C477F /* XCRemoteSwiftPackageReference "ReactorKit" */;
+			productName = ReactorKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4C6D23362ABB2099006C477F /* Project object */;
+}
