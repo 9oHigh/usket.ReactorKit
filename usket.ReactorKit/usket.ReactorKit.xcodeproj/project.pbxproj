@@ -16,6 +16,12 @@
 		4C6D23632ABB209A006C477F /* usket_ReactorKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6D23622ABB209A006C477F /* usket_ReactorKitUITests.swift */; };
 		4C6D23652ABB209A006C477F /* usket_ReactorKitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6D23642ABB209A006C477F /* usket_ReactorKitUITestsLaunchTests.swift */; };
 		4C6D23732ABB20C2006C477F /* ReactorKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4C6D23722ABB20C2006C477F /* ReactorKit */; };
+		4C6D23792ABC2BA6006C477F /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6D23782ABC2BA6006C477F /* TodoItem.swift */; };
+		4C6D237C2ABC2BD2006C477F /* TodoListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6D237B2ABC2BD2006C477F /* TodoListState.swift */; };
+		4C6D237F2ABC2C7A006C477F /* TodoListReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6D237E2ABC2C7A006C477F /* TodoListReactor.swift */; };
+		4C6D23822ABC2D10006C477F /* TodoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6D23812ABC2D10006C477F /* TodoService.swift */; };
+		4C6D23842ABC3483006C477F /* TodoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6D23832ABC3483006C477F /* TodoCell.swift */; };
+		4C6D23872ABC399D006C477F /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 4C6D23862ABC399D006C477F /* RxCocoa */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +54,11 @@
 		4C6D235E2ABB209A006C477F /* usket.ReactorKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = usket.ReactorKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C6D23622ABB209A006C477F /* usket_ReactorKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usket_ReactorKitUITests.swift; sourceTree = "<group>"; };
 		4C6D23642ABB209A006C477F /* usket_ReactorKitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usket_ReactorKitUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4C6D23782ABC2BA6006C477F /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
+		4C6D237B2ABC2BD2006C477F /* TodoListState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListState.swift; sourceTree = "<group>"; };
+		4C6D237E2ABC2C7A006C477F /* TodoListReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListReactor.swift; sourceTree = "<group>"; };
+		4C6D23812ABC2D10006C477F /* TodoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoService.swift; sourceTree = "<group>"; };
+		4C6D23832ABC3483006C477F /* TodoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C6D23872ABC399D006C477F /* RxCocoa in Frameworks */,
 				4C6D23732ABB20C2006C477F /* ReactorKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,6 +111,7 @@
 		4C6D23402ABB2099006C477F /* usket.ReactorKit */ = {
 			isa = PBXGroup;
 			children = (
+				4C6D234F2ABB209A006C477F /* Info.plist */,
 				4C6D23752ABB23D1006C477F /* Application */,
 				4C6D23742ABB23C5006C477F /* ReactorKit */,
 			);
@@ -125,7 +138,11 @@
 		4C6D23742ABB23C5006C477F /* ReactorKit */ = {
 			isa = PBXGroup;
 			children = (
-				4C6D23452ABB2099006C477F /* TodoViewController.swift */,
+				4C6D237A2ABC2BC1006C477F /* View */,
+				4C6D23772ABC2B91006C477F /* State */,
+				4C6D237D2ABC2C69006C477F /* Reactor */,
+				4C6D23802ABC2D02006C477F /* Service */,
+				4C6D23762ABC2B8A006C477F /* Model */,
 			);
 			path = ReactorKit;
 			sourceTree = "<group>";
@@ -137,9 +154,49 @@
 				4C6D23432ABB2099006C477F /* SceneDelegate.swift */,
 				4C6D234A2ABB209A006C477F /* Assets.xcassets */,
 				4C6D234C2ABB209A006C477F /* LaunchScreen.storyboard */,
-				4C6D234F2ABB209A006C477F /* Info.plist */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		4C6D23762ABC2B8A006C477F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4C6D23782ABC2BA6006C477F /* TodoItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4C6D23772ABC2B91006C477F /* State */ = {
+			isa = PBXGroup;
+			children = (
+				4C6D237B2ABC2BD2006C477F /* TodoListState.swift */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		4C6D237A2ABC2BC1006C477F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4C6D23452ABB2099006C477F /* TodoViewController.swift */,
+				4C6D23832ABC3483006C477F /* TodoCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4C6D237D2ABC2C69006C477F /* Reactor */ = {
+			isa = PBXGroup;
+			children = (
+				4C6D237E2ABC2C7A006C477F /* TodoListReactor.swift */,
+			);
+			path = Reactor;
+			sourceTree = "<group>";
+		};
+		4C6D23802ABC2D02006C477F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4C6D23812ABC2D10006C477F /* TodoService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +217,7 @@
 			name = usket.ReactorKit;
 			packageProductDependencies = (
 				4C6D23722ABB20C2006C477F /* ReactorKit */,
+				4C6D23862ABC399D006C477F /* RxCocoa */,
 			);
 			productName = usket.ReactorKit;
 			productReference = 4C6D233E2ABB2099006C477F /* usket.ReactorKit.app */;
@@ -235,6 +293,7 @@
 			mainGroup = 4C6D23352ABB2099006C477F;
 			packageReferences = (
 				4C6D23712ABB20C2006C477F /* XCRemoteSwiftPackageReference "ReactorKit" */,
+				4C6D23852ABC399D006C477F /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = 4C6D233F2ABB2099006C477F /* Products */;
 			projectDirPath = "";
@@ -280,7 +339,12 @@
 			files = (
 				4C6D23462ABB2099006C477F /* TodoViewController.swift in Sources */,
 				4C6D23422ABB2099006C477F /* AppDelegate.swift in Sources */,
+				4C6D237F2ABC2C7A006C477F /* TodoListReactor.swift in Sources */,
+				4C6D237C2ABC2BD2006C477F /* TodoListState.swift in Sources */,
+				4C6D23822ABC2D10006C477F /* TodoService.swift in Sources */,
+				4C6D23792ABC2BA6006C477F /* TodoItem.swift in Sources */,
 				4C6D23442ABB2099006C477F /* SceneDelegate.swift in Sources */,
+				4C6D23842ABC3483006C477F /* TodoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,6 +692,14 @@
 				minimumVersion = 3.0.0;
 			};
 		};
+		4C6D23852ABC399D006C477F /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -635,6 +707,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4C6D23712ABB20C2006C477F /* XCRemoteSwiftPackageReference "ReactorKit" */;
 			productName = ReactorKit;
+		};
+		4C6D23862ABC399D006C477F /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4C6D23852ABC399D006C477F /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
