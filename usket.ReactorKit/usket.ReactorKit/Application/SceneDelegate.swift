@@ -18,6 +18,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.windowScene = windowScene
         
         let viewController = TodoViewController()
+        let todoService = TodoService()
+        viewController.reactor = TodoListReactor(todoService: todoService)
         
         window?.rootViewController = viewController
         window?.makeKeyAndVisible()
