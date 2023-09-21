@@ -10,11 +10,13 @@ import ReactorKit
 
 class TodoListReactor: Reactor {
     
+    // View를 통해 들어오는 Action
     enum Action {
         case load
         case toggleItem(Int)
     }
     
+    // Action을 통해 실질적으로 할 동작들
     enum Mutation {
         case setLoading(Bool)
         case setTodoList([TodoItem])
@@ -22,12 +24,15 @@ class TodoListReactor: Reactor {
         case toggleItem(Int)
     }
     
+    // Mutation(실질적으로 할 동작)에 따라 상태를 변화
     struct State {
         var todoList: [TodoItem] = []
         var isLoading: Bool = false
         var error: Error?
     }
     
+    // 반드시 초기 State가 있어야함
+    // 생성자에서 받아도 상관없음
     let initialState = State()
     private let todoService: TodoService
     
@@ -35,6 +40,7 @@ class TodoListReactor: Reactor {
         self.todoService = todoService
     }
     
+    // 액션이 들어오면 호출
     func mutate(action: Action) -> Observable<Mutation> {
         switch action {
         case .load:
@@ -47,6 +53,7 @@ class TodoListReactor: Reactor {
         }
     }
     
+    // mutate가 실행된 이후 상태를 변경
     func reduce(state: State, mutation: Mutation) -> State {
         var newState = state
         switch mutation {
