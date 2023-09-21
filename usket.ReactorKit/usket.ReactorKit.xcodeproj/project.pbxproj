@@ -17,7 +17,6 @@
 		4C6D23652ABB209A006C477F /* usket_ReactorKitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6D23642ABB209A006C477F /* usket_ReactorKitUITestsLaunchTests.swift */; };
 		4C6D23732ABB20C2006C477F /* ReactorKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4C6D23722ABB20C2006C477F /* ReactorKit */; };
 		4C6D23792ABC2BA6006C477F /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6D23782ABC2BA6006C477F /* TodoItem.swift */; };
-		4C6D237C2ABC2BD2006C477F /* TodoListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6D237B2ABC2BD2006C477F /* TodoListState.swift */; };
 		4C6D237F2ABC2C7A006C477F /* TodoListReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6D237E2ABC2C7A006C477F /* TodoListReactor.swift */; };
 		4C6D23822ABC2D10006C477F /* TodoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6D23812ABC2D10006C477F /* TodoService.swift */; };
 		4C6D23842ABC3483006C477F /* TodoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C6D23832ABC3483006C477F /* TodoCell.swift */; };
@@ -55,7 +54,6 @@
 		4C6D23622ABB209A006C477F /* usket_ReactorKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usket_ReactorKitUITests.swift; sourceTree = "<group>"; };
 		4C6D23642ABB209A006C477F /* usket_ReactorKitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usket_ReactorKitUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4C6D23782ABC2BA6006C477F /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
-		4C6D237B2ABC2BD2006C477F /* TodoListState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListState.swift; sourceTree = "<group>"; };
 		4C6D237E2ABC2C7A006C477F /* TodoListReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListReactor.swift; sourceTree = "<group>"; };
 		4C6D23812ABC2D10006C477F /* TodoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoService.swift; sourceTree = "<group>"; };
 		4C6D23832ABC3483006C477F /* TodoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCell.swift; sourceTree = "<group>"; };
@@ -139,10 +137,9 @@
 			isa = PBXGroup;
 			children = (
 				4C6D237A2ABC2BC1006C477F /* View */,
-				4C6D23772ABC2B91006C477F /* State */,
 				4C6D237D2ABC2C69006C477F /* Reactor */,
-				4C6D23802ABC2D02006C477F /* Service */,
 				4C6D23762ABC2B8A006C477F /* Model */,
+				4C6D23802ABC2D02006C477F /* Service */,
 			);
 			path = ReactorKit;
 			sourceTree = "<group>";
@@ -166,19 +163,11 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		4C6D23772ABC2B91006C477F /* State */ = {
-			isa = PBXGroup;
-			children = (
-				4C6D237B2ABC2BD2006C477F /* TodoListState.swift */,
-			);
-			path = State;
-			sourceTree = "<group>";
-		};
 		4C6D237A2ABC2BC1006C477F /* View */ = {
 			isa = PBXGroup;
 			children = (
 				4C6D23452ABB2099006C477F /* TodoViewController.swift */,
-				4C6D23832ABC3483006C477F /* TodoCell.swift */,
+				4C6D23882ABC4680006C477F /* Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -197,6 +186,14 @@
 				4C6D23812ABC2D10006C477F /* TodoService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		4C6D23882ABC4680006C477F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4C6D23832ABC3483006C477F /* TodoCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,7 +337,6 @@
 				4C6D23462ABB2099006C477F /* TodoViewController.swift in Sources */,
 				4C6D23422ABB2099006C477F /* AppDelegate.swift in Sources */,
 				4C6D237F2ABC2C7A006C477F /* TodoListReactor.swift in Sources */,
-				4C6D237C2ABC2BD2006C477F /* TodoListState.swift in Sources */,
 				4C6D23822ABC2D10006C477F /* TodoService.swift in Sources */,
 				4C6D23792ABC2BA6006C477F /* TodoItem.swift in Sources */,
 				4C6D23442ABB2099006C477F /* SceneDelegate.swift in Sources */,
